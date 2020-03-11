@@ -1,3 +1,5 @@
+Codepen Link: https://codepen.io/JuanR_/pen/qBdxdjQ?editors=1100
+
 1. What is Semantic HTML? 
 HTML that introduces meaning to the web page
     2. What is HTML used for? 
@@ -55,19 +57,63 @@ sidebar:link{
     24. What is a pseudo selector? 
 used to select a special state of an element
     25. What do we use the change the spacing between lines?
-Line-space: #;
+Line-spacing: #;
     26. What do we use to change the spacing between letters?
 Letter-spacing: #;
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
 text-transformation: (uppercase, lowercase, capitalize)
     28. How do I add a 1px border around my div that is dotted and black?
-
-    29. How do I select everything on the page? 
+divClass{
+border-style: dotted;
+}
+    29. How do I select everything on the page?
+Using the Universal Selector (*)
     30. How do I write a comment in CSS?
+/* comment */
     31. How do I find out what file I am in, when I am using the command line? 
+pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
+ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+Rm fileName You also have to be careful with this because doing this will permanently remove the file without warning and no way to get it back
     34. Why should I use version control? 
+It allows you to work on your code without disrupting the main code being used and you're able to push changes whenever
     35. How often should I commit to github?
+You should commit whenever you finish a step/feature you're working on.
     36. What is the command we would use to push our repo up to github? 
+git push -u origin branch-name
     37. Walk me through Lambda's git flow. 
+-Fork your own version of Repository
+	-name should be in front of '/'
+-Add TL to the forked repo
+	-Settings>Collaborators>Add Collaborator
+-Clone repository
+	-copy the link
+-Inside terminal use cd (change directory command) to go to the directory (folder) where you will need the repository I
+-type in git clone <repositoryLINK>
+-cd into new repository
+-Create new branch with git checkout -b <branch-name>
+(Make any changes in the branch like new files or whatever is needed)
+-Add and commit new changes locally to the repo
+	-git add .
+	-git commit -m "message here"
+-Push changes to the GitHub repo
+	-git push -u origin <branch-name>
+-Submit a new Pull Request
+	-on your GitHub repository go to where it says branch:master and change it to your new branch name
+-Change Repository from original to compare the new changes to your own master branch
+-Add TL as a Reviewer and finally submit the pull request
+
+STRETCH Questions
+    1. What is the difference between an inline element and a block element?
+An inline element does not create a new line while block elements will
+    2. What happens when an element is positioned absolutely? 
+That means the element's position is in a fixed position
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+Block: div header section
+Inline: span anchor
+Inline-block: nav
+    5. In your own words, explain the box model. What is the fix for the box model?
+Consists of content inside a padding, border, and margin. Basically what wrap arounds every html element. The fix for the box model would simply adding the box-sizing: border-box;
